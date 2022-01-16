@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Título da página (aba) -->
+    <title>Agendamento Z</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícone da página (aba) -->
+    <link rel="shortcut icon" href="lista.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- div do container (engloba todo conteúdo da página) -->
+    <div class="container">
+        <!-- Texto do "cabeçalho" da página  -->
+        <h1>Preencha o Formulário</h1>
+        <h2>Você poderá agendar um atendimento virtual ou uma visita em nossa escola e nos visitar presencialmente. Até breve!</h2>
+        <form>
+            <!-- Primeiro drop-down da página (unidade) -->
+            <div class="row">
+                <div class="column">
+                    <label for="unidade">Unidade:</label>
+                    <select name="endereco" id="unidade">
+                        <option value="" selected>*Selecione:</option>
+                        <option value="">Aparecida de Goiânia - Av.Independência</option>
+                        <option value="">Goiânia - Setor Marista</option>
+                        <option value="">Goiânia - Setor Pq. Flamboyant</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Segundo drop-down da página (série) -->
+            <div class="row">
+                <div class="column">
+                    <label for="serie">Série de interesse:</label>
+                    <select name="serie" id="serie">:
+                        <option value="" selected>*Selecione:</option>
+                        <option value="">ENSINO MÉDIO - 1ª ANO - MANHÃ</option>
+                        <option value="">ENSINO MÉDIO - 2ª ANO - MANHÃ</option>
+                        <option value="">ENSINO MÉDIO - 3ª ANO - MANHÃ</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Campo para inserir o nome do responsável -->
+            <div class="">
+                <div class="column">
+                    <label for="name_respon">Nome do Responsável:</label>
+                    <input type="text" id="name_respon" placeholder="Nome Completo...">
+                </div>
+                <!-- Campo para inserir o nome do responsável -->
+                <div class="padd">
+                    <div class="column">
+                        <label for="name_aluno">Nome do Aluno:</label>
+                        <input type="text" id="name_aluno" placeholder="Nome Completo...">
+                    </div>
+
+
+                    <!-- Data de nascimento-->
+                    <label>Data de nascimento:</label>
+                        <div class="data_nasc">
+                            
+                        <!-- Drop-down para definir o dia do nascimento -->
+                            <select name="dia_nacimento" id="dia">
+                            <option value="-1">Dia:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        
+                            <option value="31">31</option>
+                            </select>
+                        
+                            <!-- Drop-down para definir o mês do nascimento -->
+                            <select id="mes" name="mês_nascimento">
+                            <option value="-1">Mês:</option>
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                            </select>
+                        
+                            <!-- Drop-down para definir o ano do nascimento -->
+                            <select name="ano_nascimento" id="ano">
+                        
+                            <option value="-1">Ano:</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                        
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                <!-- Campo para inserir o email -->
+                <div class="padd">
+                    <div class="column">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="exemplo@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo para inserir o número de celular com máximo de 15 caracteres -->
+            <div class="padd">
+                <div class="column">
+                    <label>Número do celular</label>
+                <input type="tel" name="num_celular" maxlength="15" placeholder="(XX) XXXXX-XXXX"/>
+                </div>
+            </div>
+
+            <!-- Campo para inserir o CPF com máximo de 14 caracteres -->
+        <div class="padd">
+            <div class="column">
+                <label for="cpf">CPF do Responsável</label>
+                <input type="text" name="cpf" maxlength="14" placeholder="XXX.XXX.XXX-XX"/>
+            </div>
+
+            <!-- Campo de gênero com 2 opções de botões selecionáveis (radio button) -->
+            <div class="column">
+                <h3 class="padd">Gênero:</h3>
+                <div class="opcoes">
+                    <p>Masculino <input type="radio" name="gen" value="Mas"  class="margem"/></p> 
+                    <p>Feminino  <input type="radio" name="gen" value="Fem" class="margem"/></p> 
+                </div>
+            </div>
+        
+            <!-- Campo de hobbies para escolha de 1 ou mais opções para marcar (checkbox) -->
+            <div class="hobbies">
+                <div class="column">
+                    <h3 class="padd">Hobbies:</h3>
+                        <div class="opcoes">
+                        <p>Esportes<input type="checkbox" name="esportes" value="Drawing" class="margem"/></p>
+                        <p>Games <input type="checkbox" name="videogame" value="Singing" class="margem"/></p>
+                        <p>Assistir <input type="checkbox" name="assistir" value="Dancing" class="margem"/></p>
+                        <p>ler <input type="checkbox" name="ler" value="Cooking" class="margem"/></p>
+                        <p>Outros <input type="checkbox" name="Hobby_Other" value="Other" class="margem"></p>
+                        <input type="text" name="Other_Hobby" maxlength="30" class="padd"/>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Caixa de texto para descrever o aluno -->
+            <div class="padd">
+                <div class="column">
+                    <label for="issue">Descreva o Aluno</label>
+                    <textarea id="issue" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="input_b">
+
+                <!-- Botão para enviar o formulário -->
+                <input type="submit" value="Enviar" id="sub">
+
+                <!-- Botão para resetar o formulário -->
+                <input type="reset" value="Apagar" id="res">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
