@@ -106,7 +106,7 @@ h3{
     width: 120px;
 }
 
-/* Todos os elementos textarea e input da página no estado da pseudoclasse "focus"*/
+/* Todos os elementos da tag <textarea> e <input> da página no estado da pseudoclasse "focus"*/
 textarea:focus,
 input:focus{
     outline: none;
